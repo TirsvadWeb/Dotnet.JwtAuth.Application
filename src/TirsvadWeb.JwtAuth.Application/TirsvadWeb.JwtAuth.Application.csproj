@@ -51,7 +51,7 @@
         </None>
     </ItemGroup>
     <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-        <PackageReference Include="TirsvadWeb.JwtAuth.Domain"/>
+        <PackageReference Include="TirsvadWeb.JwtAuth.Domain" Version="*"/>
     </ItemGroup>
     <ItemGroup Condition="'$(Configuration)|$(Platform)'!='Debug|AnyCPU'">
         <PackageReference Include="TirsvadWeb.JwtAuth.Domain" Version="0.1.1" />
