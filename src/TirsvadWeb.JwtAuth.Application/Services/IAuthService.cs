@@ -13,9 +13,9 @@ public interface IAuthService
     /// </summary>
     /// <param name="request">The user registration data.</param>
     /// <returns>
-    /// A <see cref="User"/> instance if registration is successful; otherwise, <c>null</c>.
+    /// A <see cref="ApplicationUser"/> instance if registration is successful; otherwise, <c>null</c>.
     /// </returns>
-    Task<User?> RegisterAsync(UserDto request);
+    Task<ApplicationUser?> RegisterAsync(ApplicationUserDto request);
 
     /// <summary>
     /// Authenticates a user and generates access and refresh tokens asynchronously.
@@ -24,7 +24,7 @@ public interface IAuthService
     /// <returns>
     /// A <see cref="TokenRepondseDto"/> containing tokens if authentication is successful; otherwise, <c>null</c>.
     /// </returns>
-    Task<TokenRepondseDto?> LoginAsync(UserDto request);
+    Task<TokenRepondseDto?> LoginAsync(ApplicationUserDto request);
 
     /// <summary>
     /// Refreshes access and refresh tokens asynchronously using a valid refresh token.

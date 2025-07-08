@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents user credentials for authentication or registration.
 /// </summary>
-public class UserDto
+public class ApplicationUserDto
 {
     /// <summary>
     /// Gets or sets the username of the user.
